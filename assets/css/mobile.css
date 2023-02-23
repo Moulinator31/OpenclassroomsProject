@@ -1,34 +1,159 @@
-body {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-.logo {
-    width: 13%;
+@media screen and (max-width: 768px) {
+  body {
+    font: 100% "roboto";
+    color: #353535;
+    margin: auto;
+    background: #F6F6F6;
+  }
+  .logo {
+    width: 162px;
     margin-bottom: 5px;
-    height: 44px;
-}
-
-.header {
-    margin-bottom: 5px;
+  }
+  .header {
     margin-top: 14px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-h2 {
-    font-family: 'roboto';
+  }
+  h1 {
     font-size: 16px;
-    color: blue;
-}
-
-.head {
+    font-weight: 500;
+  }
+  .head {
     display: flex;
     justify-content: center;
-    background-color:#EAEAEA;
+    background-color: #EAEAEA;
     width: 100%;
-}
-
-.icon-loca {
+  }
+  .icon-loca {
     padding-right: 17px;
-}
+  }
+  .back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #F6F6F6;
+  }
+  h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .button {
+    margin-bottom: 57px;
+    margin-top: 27px;
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    padding: 4% 5.5%;
+    border: 0px;
+  }
+  .border {
+    border-radius: 25px;
+    background-color: #9356DC;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    color: white;
+    padding: 5px 5px;
+    z-index: 3;
+  }
+  .functioning {
+    padding-left: 20px;
+    padding-top: 28.08px;
+    height: 440px;
+    background: white;
+  }
+  .functioning-button {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    left: 20px;
+    position: absolute;
+    z-index: 2;
+    width: 86%;
+    height: 72px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f6f6f6;
+  }
+  .survol :hover {
+    background: #F5EDFF;
+  }
+  .functioning_1 {
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    z-index: 1;
+    margin-bottom: 24px;
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .icon-f1 {
+    color: #7E7E7E;
+    padding-right: 27px;
+  }
+  .restaurant {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    height: 170px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .cards {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15PX;
+  }
+  h6 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 16px;
+    margin-left: 13px;
+  }
+  p {
+    font-weight: 300;
+    font-size: 17px;
+    margin-left: 13px;
+    margin-top: 5px;
+  }
+  .heart-c {
+    display: grid;
+    grid-template-columns: 287px auto;
+  }
+  .heart {
+    margin-top: 23px;
+    width: 100%;
+    position: relative;
+  }
+  .jauge-remplissage {
+    transition: all 0.3s linear 0s;
+    background-color: #33BEE5;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}/*# sourceMappingURL=mobile.css.map */
