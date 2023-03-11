@@ -1,0 +1,261 @@
+.header {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.header__shadow {
+  width: 100%;
+  box-shadow: 0 10px 10px -10px #B5B5B5;
+  position: relative;
+}
+.header__head {
+  background-color: #EAEAEA;
+  width: 100%;
+  padding-top: 6px;
+}
+.header__logo {
+  width: 162px;
+  margin-bottom: 5px;
+}
+
+.button {
+  margin-bottom: 57px;
+  margin-top: 27px;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  color: #FFF;
+  font-size: 16px;
+  padding: 4% 5.5%;
+  border: 0px;
+}
+
+.no-p {
+  font-weight: 500;
+  font-size: 14;
+  margin-left: 0px;
+  margin-top: 17px;
+  width: 15.27px;
+  height: 14.55px;
+}
+
+.border {
+  border-radius: 25px;
+  background-color: #9356DC;
+  text-align: center;
+  color: #FFF;
+  padding: 5px 5px;
+  z-index: 3;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.functioning-button {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  left: 20px;
+  position: absolute;
+  z-index: 2;
+  width: 86%;
+  height: 72px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.functioning-button:hover {
+  background: #F5EDFF;
+}
+
+.functioning_1 {
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  z-index: 1;
+  margin-bottom: 24px;
+  height: 72px;
+}
+
+.icon-f1 {
+  color: #7E7E7E;
+  padding-right: 27px;
+}
+
+.icon-f1:hover {
+  color: #9356DC;
+}
+
+.icon-loca {
+  padding-right: 17px;
+}
+
+.heart {
+  font-size: 25px;
+  position: absolute;
+  left: 80%;
+  margin-top: 23px;
+}
+
+.fa-heart:hover::before {
+  font-weight: 600;
+  cursor: pointer;
+  transition-timing-function: ease-in;
+  transition: 2s;
+  color: #9356DC;
+}
+
+.cards {
+  background: #FFF;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 15PX;
+}
+.cards__box-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.cards__new {
+  position: absolute;
+  font-weight: 500;
+  font-size: 14px;
+  width: 80px;
+  text-align: center;
+  color: #008766;
+  padding-top: 7px;
+  padding-bottom: 6px;
+}
+.cards__box {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  background: #99E2D0;
+  margin-right: 14px;
+  margin-top: 10px;
+}
+.cards__img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body {
+  font: 100% "roboto";
+  margin: auto;
+  background: #F6F6F6;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #353535;
+}
+
+h2 {
+  color: #000;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+h4 {
+  font-family: "Shrikhand";
+  color: #FFF;
+  margin-left: 25px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+  padding-right: 38px;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  margin-top: 16px;
+  margin-left: 13px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 17px;
+  margin-left: 13px;
+  margin-top: 5px;
+}
+
+.back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.functioning {
+  padding-left: 20px;
+  padding-top: 28.08px;
+  height: 420px;
+  background: #FFF;
+}
+
+.restaurant {
+  margin: 54px 20px 0px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.color-h {
+  color: #FFF;
+}
+
+nav ul {
+  color: #FFF;
+  padding-left: 25px;
+  margin-top: 0px;
+}
+nav li {
+  list-style: none;
+  margin-bottom: 7px;
+}
+
+.footer {
+  background: #353535;
+  list-style: none;
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__iconf {
+  padding-right: 11px;
+  font-size: 11px;
+}
+.footer__iconf2 {
+  padding-right: 5px;
+  font-size: 11px;
+}
+.footer__end {
+  font-weight: 400;
+  font-size: 16px;
+  font: "regular";
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,77 @@
+body {
+    font: 100% $font-stack;
+    margin: auto;
+    background: $body-color;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $primary-color;
+}
+
+h2 {
+    color: $black-color;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+h4 {
+    font-family: $font-family;
+    color: $white-color;
+    margin-left: 25px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 38px;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 16px;
+    margin-left: 13px;
+}
+
+p {
+    font-weight: 300;
+    font-size: 17px;
+    margin-left: 13px;
+    margin-top: 5px;
+}
+
+.back {
+    @include position
+}
+
+.functioning {
+    padding-left: 20px;
+    padding-top: 28.08px;
+    height: 420px;
+    background: $white-color;
+}
+
+.restaurant {
+    margin: 54px 20px 0px 20px
+}
+
+a {
+    text-decoration: none;
+}
+
+.color-h{
+    color: $white-color;
+}

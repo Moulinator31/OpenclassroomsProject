@@ -1,0 +1,21 @@
+.footer {
+    background: #353535;
+    list-style: none;
+    margin-top: 64px;
+    @include column;
+
+    &__iconf {
+        padding-right: 11px;
+        font-size: 11px;
+    }
+
+    &__iconf2 {
+        padding-right: 5px;
+        font-size: 11px;
+    }
+    &__end {
+        font-weight: 400;
+        font-size: 16px;
+        font: 'regular'
+    }
+}

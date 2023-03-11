@@ -1,0 +1,28 @@
+.icon-f1 {
+    color: #7E7E7E;
+    padding-right: 27px;
+}
+
+.icon-f1:hover {
+    color: #9356DC
+}
+
+.icon-loca {
+    padding-right: 17px;
+}
+
+.heart {
+
+    font-size: 25px;
+    position: absolute;
+    left: 80%;
+    margin-top: 23px;
+}
+
+.fa-heart:hover::before {
+    font-weight: 600;
+    cursor: pointer;
+    transition-timing-function: ease-in;
+    transition: 2s;
+    color:#9356DC ;
+}
