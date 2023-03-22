@@ -5,6 +5,10 @@
         &__shadow{
              @include shadowh;
         }
+        
+        &__loca {
+            padding-right: 17px;
+        }
 
         &__head {
             background-color:$head-color;
@@ -15,6 +19,16 @@
         &__logo {
         width: 162px;
         margin-bottom: 5px;
-        }   
+        }
 
+        &__fleche {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        }
+    
+.img {
+    width: 100%;
 }
+}
+

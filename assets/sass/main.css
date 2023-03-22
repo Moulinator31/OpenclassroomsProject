@@ -10,6 +10,9 @@
   box-shadow: 0 10px 10px -10px #B5B5B5;
   position: relative;
 }
+.header__loca {
+  padding-right: 17px;
+}
 .header__head {
   background-color: #EAEAEA;
   width: 100%;
@@ -19,78 +22,13 @@
   width: 162px;
   margin-bottom: 5px;
 }
-
-.button {
-  margin-bottom: 57px;
-  margin-top: 27px;
-  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 25px;
-  color: #FFF;
-  font-size: 16px;
-  padding: 4% 5.5%;
-  border: 0px;
-}
-
-.no-p {
-  font-weight: 500;
-  font-size: 14;
-  margin-left: 0px;
-  margin-top: 17px;
-  width: 15.27px;
-  height: 14.55px;
-}
-
-.border {
-  border-radius: 25px;
-  background-color: #9356DC;
-  text-align: center;
-  color: #FFF;
-  padding: 5px 5px;
-  z-index: 3;
-  font-size: 14px;
-  margin-top: 20px;
-  margin-left: 5px;
-}
-
-.functioning-button {
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  left: 20px;
-  position: absolute;
-  z-index: 2;
-  width: 86%;
-  height: 72px;
-  border-radius: 20px;
+.header__fleche {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.functioning-button:hover {
-  background: #F5EDFF;
-}
-
-.functioning_1 {
-  position: relative;
   flex-direction: row;
-  display: flex;
-  z-index: 1;
-  margin-bottom: 24px;
-  height: 72px;
+  width: 100%;
 }
-
-.icon-f1 {
-  color: #7E7E7E;
-  padding-right: 27px;
-}
-
-.icon-f1:hover {
-  color: #9356DC;
-}
-
-.icon-loca {
-  padding-right: 17px;
+.header .img {
+  width: 100%;
 }
 
 .heart {
@@ -100,12 +38,20 @@
   margin-top: 23px;
 }
 
-.fa-heart:hover::before {
+.fa-heart:hover::after {
   font-weight: 600;
   cursor: pointer;
-  transition-timing-function: ease-in;
-  transition: 2s;
-  color: #9356DC;
+  transition: transform 0.4s ease;
+  position: absolute;
+  z-index: -2;
+  transform: scale(1);
+  background: -webkit-linear-gradient(bottom left, #ff79da, #9356dc);
+}
+
+.arrow {
+  font-size: 20px;
+  padding: 3px 75px 0px 23px;
+  color: #353535;
 }
 
 .cards {
@@ -203,30 +149,12 @@ p {
   margin-top: 5px;
 }
 
-.back {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.functioning {
-  padding-left: 20px;
-  padding-top: 28.08px;
-  height: 420px;
-  background: #FFF;
-}
-
 .restaurant {
   margin: 54px 20px 0px 20px;
 }
 
 a {
   text-decoration: none;
-}
-
-.color-h {
-  color: #FFF;
 }
 
 nav ul {
@@ -258,4 +186,185 @@ nav li {
   font-weight: 400;
   font-size: 16px;
   font: "regular";
+}
+
+.tutorial {
+  padding-left: 20px;
+  padding-top: 28.08px;
+  height: 420px;
+  background: #FFF;
+}
+.tutorial__position {
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  z-index: 1;
+  margin-bottom: 24px;
+  height: 72px;
+}
+.tutorial__button {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  left: 20px;
+  position: absolute;
+  z-index: 2;
+  width: 86%;
+  height: 72px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.tutorial__button:hover {
+  background: #F5EDFF;
+}
+.tutorial__icon {
+  color: #7E7E7E;
+  padding-right: 27px;
+}
+.tutorial__icon:hover {
+  color: #9356DC;
+}
+.tutorial__bubble {
+  border-radius: 25px;
+  background-color: #9356DC;
+  text-align: center;
+  color: #FFF;
+  padding: 5px 5px;
+  z-index: 3;
+  font-size: 14px;
+}
+.tutorial__bubble-position {
+  font-weight: 500;
+  margin-left: 4px;
+  margin-top: 25px;
+  width: 15.27px;
+  height: 14.55px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.heading__button {
+  margin-bottom: 57px;
+  margin-top: 27px;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  color: #FFF;
+  font-size: 16px;
+  padding: 4% 5.5%;
+  border: 0px;
+}
+.heading__button--white {
+  color: #FFF;
+}
+
+.police {
+  font-family: "Shrikhand";
+  font-weight: 400px;
+  font-size: 28px;
+}
+
+.position {
+  margin-left: 13px;
+  background: #F7F7F7;
+  border-radius: 40px 40px 0px 0px;
+}
+.position__heading {
+  display: flex;
+  flex-direction: row;
+}
+.position__border {
+  border-radius: 40px 40px 0px 0px;
+}
+.position__police {
+  font-family: "Shrikhand";
+  font-weight: 400px;
+  font-size: 28px;
+  color: #101010;
+}
+
+.plats {
+  display: flex;
+  flex-direction: column;
+  margin-right: 13px;
+}
+.plats__case {
+  background: #FFFFFF;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15.0431px;
+  margin-bottom: 12px;
+  padding-left: 11px;
+  height: 68px;
+}
+.plats h3 {
+  border-bottom: 3px solid #99E2D0;
+  width: 42px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.plats h5 {
+  font-size: 18px;
+  margin-bottom: 0px;
+  margin-top: 12px;
+}
+.plats__intitulate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 300;
+  padding-top: 5px;
+}
+.plats__price {
+  font-weight: bold;
+  padding-right: 17px;
+  font-size: 15px;
+  color: #353535;
+}
+.plats__overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.plats__checkbox:hover {
+  background: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  width: 59px;
+  position: relative;
+  text-align: center;
+  padding-top: 25px;
+  height: 43px;
+  bottom: 39px;
+  cursor: pointer;
+}
+.plats__check {
+  color: #FFF;
+  font-size: 20px;
+}
+
+.commande {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.commande__button {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  width: 60%;
+  height: 50px;
+  margin-top: 27px;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  border-radius: 25px;
+  color: #FFF;
+  font-size: 16px;
+  padding: 4% 5.5%;
+  border: 0px;
+}
+.commande__button--white {
+  color: #FFF;
 }/*# sourceMappingURL=main.css.map */

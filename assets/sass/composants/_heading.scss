@@ -1,0 +1,11 @@
+.heading {
+    @include position;
+
+        &__button {
+            @include button_h
+        }
+        
+        &__button--white{
+            color: $white-color;
+        }
+}

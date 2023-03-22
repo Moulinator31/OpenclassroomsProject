@@ -1,0 +1,54 @@
+.tutorial {
+    padding-left: 20px;
+    padding-top: 28.08px;
+    height: 420px;
+    background: $white-color;
+
+        &__position {
+            position: relative;
+            flex-direction: row;
+            display: flex;
+            z-index: 1;
+            margin-bottom: 24px;
+            height: 72px;
+        }
+
+        &__button {
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            left: 20px;
+            position: absolute;
+            z-index: 2;
+            width: 86%;
+            height: 72px;
+            border-radius: 20px;
+            @include position
+        }
+
+        &__button:hover {
+                background: #F5EDFF;
+            }
+
+        &__icon {
+                color: #7E7E7E;
+                padding-right: 27px;
+            }
+            
+        &__icon:hover {
+                color: #9356DC
+            }
+
+        &__bubble {
+            
+            @include border;
+        }
+
+        &__bubble-position {
+            font-weight: 500;
+            margin-left: 4px;
+            margin-top: 25px;
+            width: 15.27px;
+            height: 14.55px;
+        }
+        
+}
+

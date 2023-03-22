@@ -1,0 +1,20 @@
+.commande {
+        @include position;
+
+    &__button {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+        width: 60%;
+        height: 50px;
+        margin-top: 27px;
+        background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+        border-radius: 25px;
+        color: $white-color;
+        font-size: 16px;
+        padding: 4% 5.5%;
+        border: 0px
+    
+    }
+    &__button--white{
+        color: $white-color;
+    }
+}

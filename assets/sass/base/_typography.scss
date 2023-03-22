@@ -53,17 +53,6 @@ p {
     margin-top: 5px;
 }
 
-.back {
-    @include position
-}
-
-.functioning {
-    padding-left: 20px;
-    padding-top: 28.08px;
-    height: 420px;
-    background: $white-color;
-}
-
 .restaurant {
     margin: 54px 20px 0px 20px
 }
@@ -72,6 +61,3 @@ a {
     text-decoration: none;
 }
 
-.color-h{
-    color: $white-color;
-}

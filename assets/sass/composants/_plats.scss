@@ -1,0 +1,68 @@
+.plats {
+        @include column;
+        margin-right: 13px;
+
+        &__case {
+            background: #FFFFFF;
+            box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+            border-radius: 15.0431px;
+            margin-bottom: 12px;
+            padding-left: 11px;
+            height: 68px;
+        }
+
+        h3 {
+            border-bottom: 3px solid #99E2D0;
+            width: 42px;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        h5 {
+            font-size: 18px;
+            margin-bottom: 0px;
+            margin-top: 12px;
+        
+        }
+
+        &__intitulate {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 15px;
+            font-weight: 300;
+            padding-top: 5px;
+        }
+
+        &__price {
+            font-weight: bold;
+            padding-right: 17px;
+            font-size: 15px;
+            color: #353535;
+        }
+
+        &__overflow {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        &__checkbox:hover {
+            background: #99E2D0;
+            border-radius: 0px 15px 15px 0px;
+            width: 59px;
+            position: relative;
+            text-align: center;
+            padding-top: 25px;
+            height: 43px;
+            bottom: 39px;
+            cursor: pointer;
+        }
+
+        &__check {
+            color: $white-color;
+            font-size: 20px;
+        }
+        
+    }
+
