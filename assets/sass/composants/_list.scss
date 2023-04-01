@@ -1,13 +1,26 @@
 nav {
+    @include responsive (medium) {
+        flex-direction: row-reverse;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 52px;
+    }
     ul {
         color: $white-color;
         padding-left: 25px;
         margin-top: 0px;
+        @include responsive (medium) {
+            display: flex;
+            flex-direction: row;
+        }
     }
 
     li  { 
-
         list-style: none;
         margin-bottom: 7px;
+        @include responsive (medium) {
+            padding-right: 40px;
+        }
     }
 }

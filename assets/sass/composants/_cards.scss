@@ -1,6 +1,18 @@
 .cards {
     @include cards;
+    @include responsive (medium) {
+        width: 31.5%;
+    }
 
+    &__all { @include responsive (medium) {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    }
+    
     &__box-img {
         display: flex;
         flex-direction: row;
@@ -28,3 +40,7 @@
 
 }
 
+.heart-c {
+    position: relative;
+    color: #000
+}

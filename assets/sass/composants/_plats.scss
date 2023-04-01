@@ -1,14 +1,33 @@
 .plats {
         @include column;
         margin-right: 13px;
-
+        @include responsive (medium) {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        @include responsive (large){
+            padding-left: 210px;
+            padding-right: 210px;
+            animation-delay: 0.6s;
+        }
         &__case {
-            background: #FFFFFF;
-            box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
             border-radius: 15.0431px;
             margin-bottom: 12px;
             padding-left: 11px;
             height: 68px;
+            background-color: #fff;
+            box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+            position: relative;
+            cursor: pointer;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            transition: padding-right 450ms ease-in-out;
+            @include responsive (medium){
+                animation: 2s;
+                animation-name: slidein;
+            }
+           
         }
 
         h3 {
@@ -27,8 +46,9 @@
 
         &__intitulate {
             display: flex;
-            flex-direction: row;
             justify-content: space-between;
+            align-items: center;
+            line-height: 1.2em;
             font-size: 15px;
             font-weight: 300;
             padding-top: 5px;
@@ -47,22 +67,53 @@
             white-space: nowrap;
         }
 
-        &__checkbox:hover {
-            background: #99E2D0;
-            border-radius: 0px 15px 15px 0px;
+        &__checkbox {
+            display: flex;
+            justify-content: center;
+            background-color: #99E2D0;
+            right: -110px;
+            top: 0;
+            opacity: 0;
+            transition: transform 330ms ease-in-out;
             width: 59px;
             position: relative;
             text-align: center;
             padding-top: 25px;
             height: 43px;
-            bottom: 39px;
             cursor: pointer;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            
         }
 
         &__check {
             color: $white-color;
             font-size: 20px;
         }
+        &__boxcheck {
+            display: flex;
+            flex-direction: row-reverse;
+            position: relative;
+            bottom: 57px;
+            transition: margin-right 0.5s;
+
+         }
+
+         &__case:hover {
+            padding-right: 60px;
+          }
+          &__case:hover &__checkbox{
+            opacity: 1;
+            transform: translate(-50px);
+          }
+          &__case:hover .fa-circle-check  {
+            animation: rotate 2s;
+          }
         
     }
-
+    @keyframes slidein {
+        from {
+          margin-bottom: 80%;
+          width: 98%;
+        }
+    }

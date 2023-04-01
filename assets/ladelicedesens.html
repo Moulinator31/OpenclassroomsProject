@@ -13,27 +13,27 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <title></title>
+        <title>Le délice des sens</title>
 	</head>
-    <header class="header">
-        <div class="header__fleche">
-            <a href="#"><i class="fa-sharp fa-solid fa-arrow-left arrow"></i></a>
+    <header class="header-menu">
+        <div class="header-menu__fleche">
+            <a href="index.html"><i class="fa-sharp fa-solid fa-arrow-left arrow"></i></a>
             <picture>
                  <source media="(max-width: 768px)" srcset="images/logo/ohmyfood.png">
                 <source media="(max-width: 991px)" srcset="images/logo/ohmyfood.png">
-                <img class="header__logo" src="images/logo/ohmyfood.png">
+                <img class="header-menu__logo" src="images/logo/ohmyfood.png">
             </picture>
         </div>
-            <picture>
+            <picture class="header-menu__img">
                 <source media="(max-width: 768px)">
-                <img class="img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+                <img class="header-menu__img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
             </picture>
     </header>
 
-    <div class="position">
-        <div class="position__heading position__border">
-            <h1 class="position__police">Le délice des sens</h1>
-            <i class="fa-regular fa-heart heart"><a href="#"><span class="jauge-remplissage"></span></i></a>
+    <div class="menu">
+        <div class="menu__heading menu__border heart-c">
+            <h1 class="menu__police">Le délice des sens</h1>
+            <span><i class="fa-regular fa-heart menu__heart"></i></span>
         </div>
         <div class="plats">
             <h3>ENTREES</h3>
@@ -43,6 +43,9 @@
                     <span>Assaisonné au yuzu</span>
                     <span class="plats__price">25€</span>
                 </div>
+                <div class="plats__boxcheck">
+                    <a class="plats__checkbox"><i class="fa-solid fa-circle-check plats__check"></i></a>
+                </div>
             </div>
             <div class="plats__case">
                     <h5 class="plats__overflow">Bouchée de homard croustillant</h5>
@@ -50,12 +53,18 @@
                     <span class="plats__overflow">Et sa farandole de petits légumes</span>
                     <span class="plats__price">35€</span>
                 </div>
+                <div class="plats__boxcheck">
+                    <a class="plats__checkbox"><i class="fa-solid fa-circle-check plats__check"></i></a>
+                </div>
             </div>
             <div class="plats__case">
                     <h5>Velouté de cèpes</h5>
                 <div class="plats__intitulate">
                     <span>Aux truffes</span>
                     <span class="plats__price">20€</span>
+                </div>
+                <div class="plats__boxcheck">
+                    <a class="plats__checkbox"><i class="fa-solid fa-circle-check plats__check"></i></a>
                 </div>
             </div>
 
@@ -66,6 +75,9 @@
                     <span>Et sa crème de truffe</span>
                     <span class="plats__price">40€</span>
                 </div>
+                <div class="plats__boxcheck">
+                    <a class="plats__checkbox"><i class="fa-solid fa-circle-check plats__check"></i></a>
+                </div>
             </div>
             <div class="plats__case">
                     <h5>Langouste rôtie</h5>
@@ -73,12 +85,18 @@
                     <span>Et ses légumes de saison</span>
                     <span class="plats__price">35€</span>
                 </div>
+                <div class="plats__boxcheck">
+                    <a class="plats__checkbox"><i class="fa-solid fa-circle-check plats__check"></i></a>
+                </div>
             </div>
             <div class="plats__case">
                     <h5>Côte de bœuf Angus</h5>
                 <div class="plats__intitulate">
                     <span>Et sa purée de panais</span>
                     <span class="plats__price">44€</span>
+                </div>
+                <div class="plats__boxcheck">
+                    <a class="plats__checkbox"><i class="fa-solid fa-circle-check plats__check"></i></a>
                 </div>
             </div>
 
@@ -89,12 +107,18 @@
                     <span>Du chef</span>
                     <span class="plats__price">18€</span>
                 </div>
+                <div class="plats__boxcheck">
+                    <a class="plats__checkbox"><i class="fa-solid fa-circle-check plats__check"></i></a>
+                </div>
             </div>
             <div class="plats__case">
                     <h5>Crème brûlée</h5>
                 <div class="plats__intitulate">
                     <span>Revisitée</span>
                     <span class="plats__price">22€</span>
+                </div>
+                <div class="plats__boxcheck">
+                    <a class="plats__checkbox"><i class="fa-solid fa-circle-check plats__check"></i></a>
                 </div>
             </div>
             <div class="plats__case">
@@ -103,13 +127,16 @@
                     <span>À la noisette</span>
                     <span class="plats__price">23€</span>
                 </div>
+                <div class="plats__boxcheck">
+                    <a class="plats__checkbox"><i class="fa-solid fa-circle-check plats__check"></i></a>
+                </div>
             </div>
             <div class="commande">
             <button class="commande__button"><a class="commande__button--white">Commander</a></button>
              </div>
         </div>
     </div>  
-    <footer class="footer">
+    <footer class="footer-menu">
         <h4>ohmyfood</h4>
         
         <nav>
@@ -117,7 +144,7 @@
                 <li><i class="fa-solid fa-utensils footer__iconf"></i><a>Proposer un restaurant</a></li>
                 <li><i class="fa-solid fa-handshake-angle footer__iconf2"></i><a>Devenir partenaire</a></li>
                 <li><a class="footer__end">Mentions légales</a></li>
-                <li><a class="footer__end">Contact</a></li>
+                <li><a href="mailto:contact@ohmyfood.com" class="footer__end">Contact</a></li>
             </ul>
         </nav>
     </footer>

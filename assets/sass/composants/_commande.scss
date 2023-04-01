@@ -1,5 +1,8 @@
 .commande {
         @include position;
+        @include responsive (medium) {
+            padding-bottom: 40px;
+        }
 
     &__button {
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
@@ -10,9 +13,16 @@
         border-radius: 25px;
         color: $white-color;
         font-size: 16px;
-        padding: 4% 5.5%;
-        border: 0px
-    
+        padding: 13px 16px 13px 16px;
+        border: 0px;
+        cursor: pointer;
+        @include responsive (medium) {
+            width: 36%;
+        }
+    }
+
+    &__button:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     }
     &__button--white{
         color: $white-color;

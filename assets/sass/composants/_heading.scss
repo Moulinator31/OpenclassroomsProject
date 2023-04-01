@@ -4,6 +4,10 @@
         &__button {
             @include button_h
         }
+
+        &__button:hover {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+        }
         
         &__button--white{
             color: $white-color;

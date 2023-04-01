@@ -1,8 +1,14 @@
 .footer {
     background: #353535;
     list-style: none;
-    margin-top: 64px;
     @include column;
+    margin-top: 64px;
+    @include responsive (medium) {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 114px;
+        margin-top: 0px;
+    }
 
     &__iconf {
         padding-right: 11px;
@@ -14,8 +20,22 @@
         font-size: 11px;
     }
     &__end {
+        color: $white-color;
         font-weight: 400;
         font-size: 16px;
         font: 'regular'
+        
+    }
+}
+
+.footer-menu {
+    background: #353535;
+    list-style: none;
+    @include column;
+    @include responsive (medium) {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 114px;
+        margin-top: 0px;
     }
 }

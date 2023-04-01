@@ -5,18 +5,23 @@
     margin-top: 23px;
 }
 
-.fa-heart:hover::after {
-    font-weight: 600;
+.heart-c .fa-heart:hover {
     cursor: pointer;
-    transition: transform .4s ease;
-    position: absolute;
-    z-index: -2;
-    transform: scale(1);
-    background: -webkit-linear-gradient(bottom left, #ff79da, #9356dc); 
+    transition: all 3s cubic-bezier(0.2, 1.11, 0.53, 0.99);
+    background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+
 }
 
 .arrow {
     font-size: 20px;
-    padding: 3px 75px 0px 23px;
+    position: absolute;
+    right: 95%;
+    left: 24px;
+    top: 17px;
     color: $primary-color;
 }
