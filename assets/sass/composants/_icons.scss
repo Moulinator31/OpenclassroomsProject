@@ -9,8 +9,6 @@
     cursor: pointer;
     transition: all 3s cubic-bezier(0.2, 1.11, 0.53, 0.99);
     background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
-    background-clip: border-box;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-weight: bold;
